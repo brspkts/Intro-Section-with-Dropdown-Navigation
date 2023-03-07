@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+  <header class="header">
+    <img src="./images/logo.svg" alt="logo">
+    <a href="javascript:void(0);" class="icon" onclick="openNavbar()"><img src="./images/icon-menu.svg"  alt="icon-menu" id="menu-close"></a>
+    <div class="navbar" id="navbar">
+      <div class="header-left">
+        <div class="features space" id="features" onclick="showMenu1()">
+          <div>
+            <a href="#Features" >Features</a>
+            <img src="./images/icon-arrow-down.svg" id="arrow-down1" alt="icon-arrow-down">
+          </div>
+          <div class="toggle1" id="toggle1">
+            <div class="toggle div1"><p>Todo List</p></div>
+            <div class="toggle div2"><p>Calendar</p></div>
+            <div class="toggle div3"><p>Reminders</p></div>
+            <div class="toggle div4"><p>Planning</p></div>
+          </div>
+        </div>
+        
+        <div class="company space" id="company" onclick="showMenu2()">
+          <div>
+            <a href="#Company">Company</a> 
+            <img src="./images/icon-arrow-down.svg" id="arrow-down2" alt="icon-arrow-down">
+          </div>
+          <div class="toggle2" id="toggle2">
+            <p>History</p>
+            <p>Our team</p>
+            <p>Blog</p>
+          </div>
+        </div>
+          <a href="#Careers" class="space">Careers</a> 
+          <a href="#About" class="space">About</a> 
+      </div>
+      <div class="header-right">
+        <button class="btn1">Login</button>
+        <button class="btn2">Register</button>
+      </div>
+    </div>
+  </header>
+  <div class="container blur">
+    <div class="box1">
+      <div class="box1-chd">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="learn-more">Learn more</button>
+        <div class="logos">
+          <img src="./images/client-databiz.svg" alt="client-databiz">
+          <img src="./images/client-audiophile.svg" alt="client-audiophile">
+          <img src="./images/client-maker.svg" alt="client-maker">
+          <img src="./images/client-meet.svg" alt="client-meet">
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <img src="./images/image-hero-desktop.png" alt="image-hero-desktop">
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
